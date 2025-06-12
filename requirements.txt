@@ -1,0 +1,13 @@
+nltk
+scikit-learn
+networkx
+numpy
+transformers
+torch
+tqdm
+PyYAML
+python-box
+
+
+
+-e .

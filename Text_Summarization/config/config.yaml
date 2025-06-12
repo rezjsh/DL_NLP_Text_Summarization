@@ -1,0 +1,4 @@
+preprocess_text:
+  max_length: 512
+  padding: "max_length"
+  truncation: true
