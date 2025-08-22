@@ -1,13 +1,16 @@
 nltk
 scikit-learn
 networkx
-numpy
+numpy < 2
 transformers
 torch
 tqdm
 PyYAML
 python-box
-
-
+rouge_score
+tf-keras
+keras<3
+flask
+huggingface-hub[hf_xet]
 
 -e .
