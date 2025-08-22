@@ -1,5 +1,9 @@
 from setuptools import setup, find_packages
 
+with open("requirements.txt") as f:
+    install_reqs = f.read().splitlines()
+
+
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
@@ -25,14 +29,6 @@ setup(
     },
     package_dir={"": SRC_REPO},
     packages=find_packages(where=SRC_REPO),
-    install_requires=[
-        "nltk",
-        "scikit-learn",
-        "networkx",
-        "numpy",
-        "transformers",
-        "torch",
-        "python-box"
-        ],
+    install_requires=install_reqs,
     python_requires=">=3.7",
 )
