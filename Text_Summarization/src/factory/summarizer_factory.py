@@ -1,7 +1,7 @@
 from typing import Type, Dict
 from dataclasses import dataclass
+from src.summarizers.Bert_summarizer import BERTExtractiveSummarizer
 from src.modules.text_preprocessing import TextProcessor
-from src.summarizers.BERT_summarizer import BERTExtractiveSummarizer
 from src.summarizers.LSA_summarizer import LSASummarizer
 from src.summarizers.T5_summarizer import T5Summarizer
 from src.summarizers.tfidf_summarizer import TFIDFSummarizer
