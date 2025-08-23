@@ -1,0 +1,65 @@
+/* static/css/style.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+  color: #4b5563; /* Default text color */
+}
+
+/* Custom styles to enhance the visuals */
+/* The Flask app's HTML uses Tailwind classes, so these are for additional flourishes */
+
+.bg-white {
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-white:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea,
+select,
+input[type="number"] {
+  border: 2px solid #e5e7eb;
+  transition: all 0.2s ease-in-out;
+}
+
+textarea:focus,
+select:focus,
+input[type="number"]:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+button[type="submit"] {
+  background-color: #6366f1;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #4f46e5;
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.15),
+    0 4px 6px -2px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
