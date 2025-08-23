@@ -1,7 +1,7 @@
 nltk
 scikit-learn
 networkx
-numpy < 2
+numpy<2
 transformers
 torch
 tqdm

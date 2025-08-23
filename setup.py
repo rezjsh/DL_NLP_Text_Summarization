@@ -29,6 +29,6 @@ setup(
     },
     package_dir={"": SRC_REPO},
     packages=find_packages(where=SRC_REPO),
-    install_requires=install_reqs,
+    # install_requires=install_reqs,
     python_requires=">=3.7",
 )

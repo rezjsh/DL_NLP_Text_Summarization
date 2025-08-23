@@ -1,6 +1,6 @@
 
 import numpy as np
-from src.components.text_preprocessing import TextProcessor
+from src.modules.text_preprocessing import TextProcessor
 from src.core.base import BaseSummarizer
 from src.utils.logging_setup import logger
 from transformers import AutoTokenizer, AutoModel

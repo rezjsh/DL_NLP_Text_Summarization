@@ -1,6 +1,6 @@
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
-from src.entity.config_entity import TextProcessingConfig
+# from src.entity.config_entity import TextProcessingConfig
 from src.utils.logging_setup import logger
 import string
 

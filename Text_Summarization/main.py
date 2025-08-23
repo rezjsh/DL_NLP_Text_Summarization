@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.'))
 
 
 download_nltk_resources()
-def evaluate_and_log_summary(summarizer_instance: ComprehensiveSummarizer,
+def evaluate_and_log_summary(summarizer_instance: Summarizer,
                              evaluator_instance: SummarizationEvaluator,
                              text: str,
                              method: str,
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
 
 
-    # Instantiate the comprehensive summarizer and evaluator
+    # Instantiate the summarizer and evaluator
     summarizer = Summarizer(language='english')
     evaluator = SummarizationEvaluator()
 
