@@ -1,1 +1,5 @@
-key: value
+text_preprocessing:
+  language: "english"
+  use_stop_words: true
+  to_lower: true
+  remove_punctuation: true
