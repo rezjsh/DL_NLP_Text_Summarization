@@ -8,7 +8,7 @@ class Logger(metaclass=SingletonMeta):
     A singleton class for managing application-wide logging.
     It configures and provides a pre-configured logger instance.
     """
-    def __init__(self, logger_name="Image_Captioning", log_dir="logs", log_file_name="running_logs.log"):
+    def __init__(self, logger_name="Text_Summarization", log_dir="logs", log_file_name="running_logs.log"):
         """
         Initializes the Logger. This constructor will only be called once
         due to the SingletonMeta.

@@ -4,6 +4,7 @@ import sys
 import pathlib
 
 from Text_Summarization.src.components.summarizer import Summarizer
+from Text_Summarization.src.utils.nltk_resources import download_nltk_resources
 # from src.components.summarizer import Summarizer
 
 
@@ -18,6 +19,9 @@ app = Flask(__name__,
     )
 app.secret_key = 'super_secret_key'
 summarizer = Summarizer(language='english')
+
+# Ensure NLTK resources are available when the app starts
+download_nltk_resources()
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -41,7 +45,7 @@ def index():
         }
 
         try:
-            if selected_method in ['tfidf', 'lsa', 'bert', 'textrank']:
+            if selected_method in ['tfidf', 'lsa', 'bert_extractive', 'textrank']:
                 summary_list = summarizer.summarize_text(
                     num_sentences=num_sentences,
                     **kwargs
