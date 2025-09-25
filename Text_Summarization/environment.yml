@@ -1,0 +1,23 @@
+name: text-summarization
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2
+  - scikit-learn
+  - networkx
+  - nltk
+  - pyyaml
+  - tqdm
+  - pip:
+      - transformers
+      - torch
+      - python-box
+      - rouge_score
+      - tf-keras
+      - keras<3
+      - flask
+      - huggingface-hub[hf_xet]
+      - -e ..
